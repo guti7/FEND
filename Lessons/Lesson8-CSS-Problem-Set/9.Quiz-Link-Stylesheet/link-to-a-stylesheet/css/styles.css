@@ -1,0 +1,25 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.portfolio {
+   width: 85%;
+}
+.menu {
+	width: 15%;
+}
+.item {
+	width: 100%;
+	clear: both;
+}
+.item img {
+	float: left
+}
+.item span {
+	display: table-cell;
+	vertical-align: middle;
+	height: 240px;
+}

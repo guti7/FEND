@@ -1,0 +1,18 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+---
+
+Your response goes here!
+
+I have learned a few things. I learned about the figure and the figcaption tags. I learned about the web development workflow. I installed the Udacity Feedback tool for chrome, a really cool resource.
+
+The markup language tags introduced so far have not been difficult to understand.
+
+The hardest part was learning a new tag (figure).
+
+I have used the documentation at MDN extensively to try to find specific tags and learn more about their purpose and semantics.
+
+
