@@ -1,0 +1,43 @@
+/* add your CSS here */
+
+body {
+  width: 326px;
+}
+
+p {
+  color: green;
+  /*background-color: yellow;*/
+}
+
+.card-border {
+  border-style: solid;
+  border-width: medium;
+  border-color: aqua;
+  padding: 0 10px 10px;
+  background-color: aquamarine;
+  box-shadow: 5px 5px lightgrey;
+}
+
+.information-border {
+  border-style: solid;
+  border-width: thin;
+  border-color: aqua;
+  padding: 0 10px;
+}
+
+.favorite-fact {
+  font-style: italic;
+}
+
+.animal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.animal-list-item {
+  font-weight: bold;
+}
+
+.animal-img {
+  padding: 0 0 10px;
+}
