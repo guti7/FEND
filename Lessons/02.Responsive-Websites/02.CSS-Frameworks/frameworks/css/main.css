@@ -13,6 +13,10 @@ h1 {
   box-sizing: border-box;
 }
 
+* {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 @media only screen and (max-width: 400px) {
   p {
     background-color: blue;
