@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -36,16 +38,51 @@
       </div>
       <div class="row text-center">
         <div class="col-md-6">
-          <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 1">
+          <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 1" data-toggle="modal" data-target="#proyecto1">
           <h3>Titulo Proyecto 1</h3>
           <p><a href="#">enlace Proyecto 1</a></p>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 2">
+          <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 2" data-toggle="modal" data-target="#proyecto2">
           <h3>Titulo Proyecto 2</h3>
           <p><a href="#">enlace Proyecto 2</a></p>
         </div>
       </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="proyecto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Proyecto 1</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 1">
+                    <p>Aquí aprendí mucho sobre HTML y CSS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="proyecto2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Proyecto 2</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="http://via.placeholder.com/555x300" alt="marcador de imagen 2">
+                    <p>Aquí aprendí mucho sobre HTML, CSS, y JavaScript.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>
