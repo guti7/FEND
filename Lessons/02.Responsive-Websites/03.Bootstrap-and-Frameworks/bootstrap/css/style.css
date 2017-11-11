@@ -1,0 +1,14 @@
+
+* {
+  outline: 1px solid red !important;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid lightgrey;
+  margin: 15px 0;
+}
+
+body {
+  background-color: black;
+}
