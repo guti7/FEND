@@ -1,0 +1,35 @@
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+}
+
+.dark-blue {
+  background-color: darkblue;
+}
+
+.orange-red {
+  background-color: orangered;
+}
+
+.green {
+  background-color: green;
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
