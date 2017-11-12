@@ -1,7 +1,7 @@
 
 body {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container {
@@ -32,4 +32,27 @@ body {
 
 .yellow {
   background-color: yellow;
+}
+
+@media screen and (min-width: 450px) {
+  .orange-red, .green {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .dark-blue, .orange-red {
+    width: 50%;
+  }
+  .green, .light-blue, .yellow {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
