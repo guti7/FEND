@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -32,4 +33,30 @@ body {
 
 .yellow {
   background-color: yellow;
+}
+
+@media screen and (min-width: 500px) {
+  .dark-blue {
+    width: 50%;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dark-blue {
+    width: 25%;
+    order: 1;
+  }
+
+  .yellow {
+    width: 25%;
+    order: -1;
+  }
+
+  #container2 {
+    width: 50%;
+  }
 }
