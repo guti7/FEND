@@ -1,0 +1,9 @@
+* {
+  outline-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .gametime {
+    display: none;
+  }
+}
