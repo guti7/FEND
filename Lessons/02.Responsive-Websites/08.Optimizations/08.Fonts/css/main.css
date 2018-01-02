@@ -1,0 +1,14 @@
+.smallFonts {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.goodFonts {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.biggerFonts {
+  font-size: 18px;
+  line-height: 1.25em;
+}
