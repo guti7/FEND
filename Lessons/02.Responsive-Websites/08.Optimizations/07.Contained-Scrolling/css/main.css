@@ -1,0 +1,13 @@
+td {
+  min-width: 75px;
+  text-align: center;
+}
+
+th:first-of-type {
+  min-width: 125px;
+}
+
+div.contained_table {
+  width: 70%;
+  overflow-x: auto;
+}
