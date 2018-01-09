@@ -2,9 +2,9 @@
 
 ## Your Goals: ##
 
-* Make the images fit in their containers in the viewport.
-* Restrain the width of the blog.
-* Drop the page weight.
+- [ ] Make the images fit in their containers in the viewport.
+- [ ] Restrain the width of the blog.
+- [ ] Drop the page weight.
 
 ## How you know you're done ##
 
