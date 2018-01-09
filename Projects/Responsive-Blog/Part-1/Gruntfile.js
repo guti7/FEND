@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           sizes: [{
             /*
             Change these:
-            
+
             width: ,
             suffix: ,
             quality:
@@ -64,11 +64,11 @@ module.exports = function(grunt) {
       },
     },
   });
-  
+
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['responsive_images', 'clean', 'mkdir', 'copy']);
 
 };
