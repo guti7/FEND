@@ -13,11 +13,13 @@ I've left some boilerplate below for you.
 */
 
 body {
-
+  max-width: 50em;
+  margin: auto;
 }
 
 article {
-
+  max-width: 50em;
+  width: 100%
 }
 
 h1 {
@@ -25,5 +27,10 @@ h1 {
 }
 
 img {
+  max-width: 50em;
+  width: 100%;
+}
 
+p > img {
+  width: 1.5em;
 }
