@@ -18,4 +18,7 @@
   ],
   "author": "guti7",
   "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }
