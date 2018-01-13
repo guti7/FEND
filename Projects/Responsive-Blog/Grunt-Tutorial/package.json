@@ -1,0 +1,21 @@
+{
+  "name": "grunt-tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial grunt set up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "//github.com/guti7/FEND.git"
+  },
+  "keywords": [
+    "grunt",
+    "js",
+    "tutorial",
+    "setup"
+  ],
+  "author": "guti7",
+  "license": "ISC",
+}
