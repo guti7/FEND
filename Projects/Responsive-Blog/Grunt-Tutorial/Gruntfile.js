@@ -10,10 +10,26 @@ module.exports = function(grunt) {
         '<%= grunt.template.today() %> */\n' //date argument "yyyy-mm-dd"
       },
       build: { // target
-        src: 'js/<%= pkg.name %>.js',
+        src: 'js/**/*.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
     },
+
+    concat: {
+      options: {
+        // String to put between each file in the concatenated output
+        separator: ';',
+        banner: '/*! <%= pkg.name %>.concat - v<%= pkg.version %> - ' +
+        '<%= grunt.template.today() %> */\n'
+      },
+      dist: {
+        // Files to concatenate
+        src: ['src/**/*.js'],
+        // Location of the output JS file
+        dest: 'js/<%= pkg.name %>.concat.js'
+      },
+    },
+
     jshint: {
       files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js', 'js/**/*.js'],
       options: {
@@ -22,6 +38,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint']
@@ -32,8 +49,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['concat', 'uglify']);
 
 };
