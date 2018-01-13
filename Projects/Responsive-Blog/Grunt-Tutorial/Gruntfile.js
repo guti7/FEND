@@ -6,12 +6,15 @@ module.exports = function(grunt) {
     // tasks configuration properties
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+        banner: '/*! <%= pkg.name %>.min - v<%= pkg.version %> - ' +
         '<%= grunt.template.today() %> */\n' //date argument "yyyy-mm-dd"
       },
       build: { // target
-        src: 'js/**/*.js',
+        src: ['<%= concat.dist.dest %>'],
         dest: 'build/<%= pkg.name %>.min.js'
+        // files: {
+        //   'build/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+        // }
       }
     },
 
@@ -31,10 +34,12 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js', 'js/**/*.js'],
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
       options: {
         globals: {
           jQuery: true
+          // console: true,
+          // module: true
         }
       }
     },
@@ -42,6 +47,10 @@ module.exports = function(grunt) {
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint']
+    },
+
+    qunit: {
+      files: ['test/**/*.html']
     }
   });
 
@@ -50,8 +59,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('test', ['jshint', 'qunit', 'concat', 'uglify']);
 
 };
