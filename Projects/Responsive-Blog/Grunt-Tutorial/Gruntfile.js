@@ -51,6 +51,17 @@ module.exports = function(grunt) {
 
     qunit: {
       files: ['test/**/*.html']
+    },
+
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'images/build'
+        }]
+      }
     }
   });
 
@@ -60,9 +71,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
   grunt.registerTask('test', ['jshint', 'qunit', 'concat', 'uglify']);
 
 };
