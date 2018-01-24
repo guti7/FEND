@@ -45,8 +45,15 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      scripts: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint']
+      },
+
+      css: {
+        files: ['css/**/*.{css,scss}'],
+        tasks: ['sass'],
+      }
     },
 
     qunit: {
@@ -62,6 +69,21 @@ module.exports = function(grunt) {
           dest: 'images/build'
         }]
       }
+    },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['**/*.{css,scss}'],
+          dest: 'public',
+          ext: '.css'
+        }]
+      }
     }
   });
 
@@ -72,6 +94,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
