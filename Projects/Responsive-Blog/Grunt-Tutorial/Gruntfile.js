@@ -45,6 +45,10 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true,
+      },
+
       scripts: {
         files: ['<%= jshint.files %>'],
         tasks: ['jshint']
@@ -79,8 +83,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'css',
-          src: ['**/*.{css,scss}'],
-          dest: 'public',
+          src: ['*.{css,scss}'],
+          dest: 'css/build',
           ext: '.css'
         }]
       }
