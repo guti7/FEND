@@ -84,6 +84,12 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      images: {
+        src: ['build/images/*']
+      }
+    },
+
     sass: {
       dist: {
         options: {
@@ -109,6 +115,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
