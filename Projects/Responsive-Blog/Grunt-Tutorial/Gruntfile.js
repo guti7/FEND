@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         src: ['src/**/*.js'],
         // Location of the output JS file
         dest: 'js/<%= pkg.name %>.concat.js'
-      },
+      }
     },
 
     jshint: {
@@ -38,8 +38,6 @@ module.exports = function(grunt) {
       options: {
         globals: {
           jQuery: true
-          // console: true,
-          // module: true
         }
       }
     },
@@ -70,7 +68,18 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'images/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'build/images/min'
+          dest: 'build/images/'
+        }]
+      }
+    },
+
+    responsive_images: {
+      dev: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{jpg,gif,png}'],
+          dest: 'build/images/'
         }]
       }
     },
@@ -99,6 +108,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-responsive-images');
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
