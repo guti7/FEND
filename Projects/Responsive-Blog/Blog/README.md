@@ -9,7 +9,7 @@
 
 ## Goals Part 2: ##
 - [x] Replace the smiley face image with a unicode smiley face.
-- [ ] Replace the flourish image with a markup technique or vector graphic.
+- [x] Replace the flourish image with a markup technique or vector graphic.
 - [ ] Add social media icons i.e. Twitter, Facebook, Google+ at footer.
 - [ ] Add an SVG logo.
 
