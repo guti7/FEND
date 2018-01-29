@@ -1,4 +1,9 @@
 
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 body {
   max-width: 50em;
   margin: auto;
@@ -21,10 +26,23 @@ figure {
   color: #f49541;
 }
 
+.socialList {
+  list-style: none;
+  text-align: center;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.socialList li {
+  display: inline;
+  padding: 0 5px;
+}
+
 #smileyFace {
   width: 14px;
 }
 
 #viewSource {
   text-align: center;
+  margin: 4px 0 8px;
 }
