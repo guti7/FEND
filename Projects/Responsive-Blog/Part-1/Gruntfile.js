@@ -12,10 +12,10 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            name: 'small',
-            width: 800,
-            suffix: '-dev',
-            quality: 60
+            width: 1600,
+            separator: '_',
+            suffix: '_large_2x',
+            quality: 30
           }]
         },
         files: [{
