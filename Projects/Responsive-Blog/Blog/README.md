@@ -11,7 +11,7 @@
 - [x] Replace the smiley face image with a unicode smiley face.
 - [x] Replace the flourish image with a markup technique or vector graphic.
 - [x] Add social media icons i.e. Twitter, Facebook, Google+ at footer.
-- [ ] Add an SVG logo.
+- [x] Add an SVG logo.
 
 ## How you know you're done ##
 
