@@ -5,7 +5,7 @@
 - [x] Make the images fit in their containers in the viewport.
 - [x] Restrain the width of the blog.
 - [x] Drop the page weight.
-- [ ] Style headings, body text, and images
+- [x] Style headings, body text, and images
 
 ## How you know you're done ##
 
