@@ -1,38 +1,30 @@
-/*
-
-Your styles go here!
-
-Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
-
-I've left some boilerplate below for you.
-
-*/
 
 body {
   max-width: 50em;
   margin: auto;
+  font-family: "Lato", sans-serif;
+  line-height: 1.2em;
+  color: #307699;
 }
 
-article {
+article, img {
   max-width: 100%;
 }
 
-h1 {
-
+h1, h2, figure {
+  text-align: center;
+  color: #f44242;
 }
 
 figure {
   margin: 0;
+  color: #f49541;
 }
 
-img {
-  max-width: 100%;
+#smileyFace {
+  width: 14px;
 }
 
-p > img {
-  width: 1.5em;
+#viewSource {
+  text-align: center;
 }
