@@ -13,6 +13,11 @@
 - [x] Add social media icons i.e. Twitter, Facebook, Google+ at footer.
 - [x] Add an SVG logo.
 
+## Goals Part 3: ##
+- [ ] Use ```<picture>``` with ```srcset``` to deliver images based on browser width and display density.
+- [ ] Add meaningful ```alt``` attributes to images.
+- [ ] Experiment with text style and fonts.
+
 ## How you know you're done ##
 
 A code will appear in the Udacity Feedback. Paste the code in to the Udacity classroom to complete the quiz!
