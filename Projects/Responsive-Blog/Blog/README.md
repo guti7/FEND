@@ -15,11 +15,7 @@
 
 ## Goals Part 3: ##
 - [ ] Use `<picture>` with `srcset` to deliver images based on browser width and display density.
-<<<<<<< HEAD
 - [x] Add meaningful `alt` attributes to images.
-=======
-- [ ] Add meaningful `alt` attributes to images.
->>>>>>> 1ac8889ffa50999644026dedf5d9e46839ef2ca3
 - [ ] Experiment with text style and fonts.
 
 ## How you know you're done ##
