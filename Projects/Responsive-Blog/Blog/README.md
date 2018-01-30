@@ -14,8 +14,8 @@
 - [x] Add an SVG logo.
 
 ## Goals Part 3: ##
-- [ ] Use ```<picture>``` with ```srcset``` to deliver images based on browser width and display density.
-- [ ] Add meaningful ```alt``` attributes to images.
+- [ ] Use `<picture>` with `srcset` to deliver images based on browser width and display density.
+- [ ] Add meaningful `alt` attributes to images.
 - [ ] Experiment with text style and fonts.
 
 ## How you know you're done ##
