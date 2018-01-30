@@ -2,6 +2,7 @@
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
 }
 
 body {
@@ -42,6 +43,15 @@ div {
 .socialList li {
   display: inline;
   padding: 0 5px;
+}
+
+.socialList a {
+  text-decoration: none;
+}
+
+header:hover #svgFire {
+  -webkit-filter: drop-shadow(3px 3px 3px #3d85c6);
+  filter: drop-shadow(3px 3px 3px #3d85c6);
 }
 
 #svgFire {
