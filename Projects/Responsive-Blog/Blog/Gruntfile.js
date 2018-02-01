@@ -8,14 +8,33 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     responsive_images: {
+      options: {
+        engine: 'im',
+        separator: '_'
+      },
       dev: {
         options: {
           engine: 'im',
           sizes: [{
             width: 1600,
-            separator: '_',
             suffix: '_large_2x',
             quality: 30
+          }, {
+            width: 1600,
+            suffix: '_large_1x',
+            quality: 15
+          }, {
+            width: 800,
+            suffix: '_medium_2x',
+            quality: 30
+          }, {
+            width: 800,
+            suffix: '_medium_1x',
+            quality: 15
+          }, {
+            width: 500,
+            quality: 15,
+            suffix: '_default_1x'
           }]
         },
         files: [{
@@ -36,15 +55,15 @@ module.exports = function(grunt) {
           src: '*/*.{gif,jpg,png}',
           dest: 'images/',
         }]
-      },
+      }
     },
 
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
         src: ['images'],
-      },
-    },
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
