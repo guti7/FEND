@@ -9,7 +9,7 @@
 - [ ] Find a logo `<svg>` format.
 
 **Semantic HTML**
-- [ ] Use semantic tags to add meaning to the code:
+- [x] Use semantic tags to add meaning to the code:
   - `<header>`
   - `<footer>`
   - `<article>`
